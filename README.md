@@ -8,7 +8,7 @@
     * [Backend](/backend)
     * [Frontend](/frontend)
     * [Hardware](/hardware)
-* [Schematic](/Schematic_hardware.png)
+* [Schematic](/Schematic)
 * [Readme](/README.md)
 * [Workpiece photo](/workpiecePhoto)
 * [license](/license.txt)
@@ -44,6 +44,9 @@ _Hardware_ - ใช้ Python ในการเขียนโปรแกร�
 - Hardware - Folder ที่ใช้โปรแกรม hardware
     * drivers - เป็น Folder ที่ใช้กับ driver ของ lcd 1620A กับ i2c
     * set_pin_display.py - เป็นไฟล์ที่ใช้รันเมื่อต้องการใช้ Hardware
+- Schematic - Folder ที่เป็น Schematic ของโปรเจคนี้ โดย
+    * Schematic_hardware_for_atmega328p.png คือรูป Schematic สำหรับการต่อ LED ผ่าน atmega328p
+    * Schematic_hardware_for_direc_raspi.png คือรูป Schematic สำหรับการต่อ LED ตรงสู่ Raspberry pi 3 model B+
 
 
 ### รายเอียด library/framework 
