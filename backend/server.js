@@ -30,7 +30,7 @@ app.post("/wallet", async (req, res) => {
         await myWallet.createKeystore(stdout, seed);
         console.log(myWallet.isUnlocked);
         console.log(myWallet.addresses);
-        res.send(myWallet.addresses);
+        res.send({ seed });
       }
     );
   }

@@ -60,7 +60,7 @@ function App() {
   };
   const genSeed = async () => {
     const { data } = await axios.post(api + "wallet");
-    alert(data.msg);
+    alert(data.seed);
   };
 
   return (
