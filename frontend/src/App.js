@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import eth from "./assets/eth.png";
-import bg from "./assets/bg.jpg";
+import bg from "./assets/bg.png";
 import axios from "axios";
 import "./App.css";
 const api = "http://localhost:4000/";
@@ -65,7 +65,7 @@ function App() {
 
   return (
     <div
-      class="min-h-screen bg-gray-100py-6 flex flex-col justify-center sm:py-12 bg-cover bg-center text-contessa-light "
+      class="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12 bg-cover bg-center text-contessa-light "
       style={{ backgroundImage: `url(${bg})` }}
     >
       <div class="relative py-3 mx-auto">
