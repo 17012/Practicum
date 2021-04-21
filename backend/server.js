@@ -2,11 +2,20 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const EthereumWallet = require("node-ethereum-wallet");
-let myWallet = new EthereumWallet();
+let myWallet = new EthereumWallet("https://rinkeby.infura.io/v3/985cb9ce3b0a4a7e944dcd6f95d9dbb7");
 myWallet.init();
 app.use(cors());
 app.use("/api", async (req, res, next) => {
-  await myWallet.unlock("your-wallet-password");
+  require("child_process").exec(
+    "python count-sw-display.py",
+    async function (err, stdout, stderr) {
+      console.log("pwd: stdout");
+      if (stderr || err)
+        return res.send({ msg: "failed on something." + stderr || err });
+      console.log(myWallet.isUnlocked);
+      await myWallet.unlock(stdout);
+    }
+  );
   next();
 });
 
