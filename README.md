@@ -24,7 +24,9 @@
     ภาควิชาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเกษตรศาสตร์
 
 ### รายละเอียดโปรเจค
-    โปรเจคนี้เป็นโปรเจคที่ทำขึ้นเพื่อสร้าง DIY Hardware wallet บน Raspberry pi โดยได้สร้างกระเป๋าบน Ethereum testnet (Rinkeby) เพื่อเป็นการทดสอบ Hardware wallet เพื่อในการใช้งานจริงสำหรับ Mainnet ในอนาคต ซึ่งโปรเจคเรา จะมีส่วนของหน้าเว็บที่ใช้กรอกรหัสยืนยันกับ Hardware ก่อนที่จะ Sign Transaction เพื่อความปลอกภัยในโลก Crypto และ Defi
+    โปรเจคนี้เป็นโปรเจคที่ทำขึ้นเพื่อสร้าง DIY Hardware wallet บน Raspberry pi 
+    โดยได้สร้างกระเป๋าบน Ethereum testnet (Rinkeby) เพื่อเป็นการทดสอบ Hardware wallet 
+    ในการใช้งานจริงสำหรับ Mainnet ในอนาคต ซึ่งโปรเจคเรา จะมีส่วนของหน้าเว็บที่ใช้กรอกรหัสยืนยันกับ Hardware ก่อนที่จะ Sign Transaction เพื่อความปลอกภัยในโลก Crypto และ Defi
 
 _Backend_ - ใช้ Node.js ในการรันระบบ server เป็นส่วนของ API ที่ใช้ในการดูข้อมูลภายใน wallet รวมถึงการ sign transaction ด้วย
 
